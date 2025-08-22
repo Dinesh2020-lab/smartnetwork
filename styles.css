@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  background: linear-gradient(135deg,#1e1e2f,#252544);
+  color: #fff;
+}
+h1 {
+  text-align: center;
+  margin: 10px 0;
+  color: #00bcd4;
+  text-shadow: 1px 1px 2px black;
+}
+#toolbar {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  border-radius: 12px;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+}
+#toolbar button {
+  margin: 5px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+#toolbar button:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+.tooltip {
+  position: absolute;
+  padding: 6px 12px;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  border-radius: 6px;
+  pointer-events: none;
+  font-size: 13px;
+  box-shadow: 0 0 10px #00bcd4;
+}
+.modal {
+  position: absolute;
+  padding: 10px;
+  background: rgba(0,0,0,0.9);
+  color: #fff;
+  border-radius: 10px;
+  top: 50px;
+  left: 50px;
+  display: none;
+  z-index: 200;
+  width: 180px;
+  box-shadow: 0 0 15px cyan;
+}
+.modal h3 {margin:5px 0;font-size:16px;text-align:center;}
+.modal p {margin:3px 0;font-size:12px;}
